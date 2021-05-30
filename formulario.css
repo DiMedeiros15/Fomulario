@@ -26,10 +26,11 @@ h2{
     border-radius: 15px;
     background-color: #fff;
     width: 80%;
-    height: 50%;
+    height: 80%;
     justify-content: space-between;
     align-items: center;
     position: relative; 
+    border: 2px solid rgb(26, 0, 44);
 }
 
 .conteudo::before{
@@ -95,13 +96,23 @@ h2{
 
 .form input{
     height: 50px;
+    width: 100%;
     border: none;
-    margin: 8px;
+    margin: 10px 0;
+    background-color: #cecece;
+    border: 2px solid rgb(29, 0, 56) ;
 }
 
 .titulo{
     font-size: 2rem;
     color: #fff;
+}
+
+.titulo2{
+    font-size: 2rem;
+    padding: 20px;
+    color: rgb(29, 0, 56);
+    font-weight: bold;
 }
 
 .descrição{
@@ -137,10 +148,10 @@ h2{
     border: 2px solid #000;
     transition: 5ms;
     text-transform: uppercase;
+    width: 50%;
+    margin: 20px auto;
+
 }
 
-.grupo{
-    
-}
 
 
