@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 *{
     border: 0; margin: 0; padding: 0; box-sizing: border-box;
-     font-family: 'Quicksand', sans-serif;
+     font-family: 'Quicksand', sans-serif; 
+}
+ 
+h2{
+    font-size: 2rem;
+    color: rgb(29, 0, 56);
+    font-weight: 800;
+    font-family: 'Poppins';
 }
 
 .container{
@@ -36,33 +44,103 @@
 
 .conteudo-1{   
     display: flex;
-    flex: 1 0 auto;
 }
 
 .conteudo-2{   
-    flex: 2 0 auto;
+    position: absolute;
+    display: none;
 }
 
 .coluna-1{
     text-align: center;
-    z-index: 999;
+    flex: 1 0 auto;
+    z-index: 99;
     color: #fff;
+}
+
+.coluna-2{
+    flex: 2 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .lista-social{
     display: flex;
+    list-style: none;
+}
+
+.item-social-media{
+    border: 2px solid #000;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    box-shadow: 1px 3px 5px #000;
+    margin: 5px;
+    background-color: rgb(29, 0, 56);
+}
+
+.lista-social li a {
+    color: #cecece;  
+    /* padding: 7px 5px; */
 }
 
 .form{
     display: flex;
     flex-direction: column;
+    width: 55%;
+}
+
+.form input{
+    height: 50px;
+    border: none;
+    margin: 8px;
+}
+
+.titulo{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.descrição{
+ font-family: 'Poppins';
+ line-height: 2rem;
 }
 
 .btn{
     border-radius: 15px;
     padding: 10px 40px;
     margin-top: 20px;
-    font-weight: 800;
+    font-weight: 800;  
+    cursor: pointer;   
+}
 
+.btn-primario{
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 50px;
+    transition: 5ms;
+}
+
+.btn-primario:hover{
+    background-color: #fff;
+    color: rgb(29, 0, 56);
+    font-size: 16px;
+}
+
+.btn-secondario{
+    background-color: rgb(29, 0, 56);
+    color: #fff;
+    border: 2px solid #000;
+    transition: 5ms;
+    text-transform: uppercase;
+}
+
+.grupo{
     
 }
+
+

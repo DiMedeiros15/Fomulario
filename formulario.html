@@ -6,47 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario Animado</title>
     <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" integrity="sha512-rqQltXRuHxtPWhktpAZxLHUVJ3Eombn3hvk9PHjV/N5DMUYnzKPC1i3ub0mEXgFzsaZNeJcoE0YHq0j/GFsdGg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <main class="container">
-        <div class="conteudo conteudo-1">  <!-- Fim Conteudo 1 -->
+        <div class="conteudo conteudo-1">  <!-- Conteudo 1 -->
             <div class="coluna-1">
                 <h2 class="titulo">Bem Vindo !</h2>
                 <p class="descrição">Para continuar conectado</p>
                 <p class="descrição">Completo suas informações</p>
-                <button type="submit" class="btn">ENTRAR</button>
+                <button type="submit" class="btn btn-primario">ENTRAR</button>
             </div>
             <div class="coluna-2">
                 <h2>Cadastro De DEVS</h2>
                  <div class="social-media">  <!-- social media -->
                     <ul class="lista-social">
-                        <a href="#"><li><i class="fab fa-facebook"></i></li>face</a>
-                        <a href="#"><li><i class="fab fa-instagram"></i></li>insta</a>
-                        <a href="#"><li><i class="fab fa-github"></i></li>GH</a>
-                    </ul>
+                        <li class="item-social-media">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="item-social-media">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="item-social-media">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </li>
+                        </ul>
                 </div> <!-- Fim social media -->
+
                 <form class="form">
                     <input type="text" placeholder="Nome">
                     <input type="email" placeholder="Email">
                     <input type="password" placeholder="Senha">
-                    <button type="submit" class="btn">Conclusão</button>
-                    <button type="reset" class="btn">Limpar</button>
+                    <button type="submit" class="btn btn-secondario">Conclusão</button>
                 </form>
             </div>
 
             <!-- <div>
-                <label for="">De qual lado da aplicação você desenvolve?</label>
-                <select name="" id="" checked>
-                    <option value="" disabled ></option>
-                    <option value="Front-End">Front-End</option>
-                    <option value="Back-End">Back-End</option>
-                    <option value="FullStack">FullStack</option>
-                </select>
+                <label for="">Qual lado da aplicação voce desenvolve?</label>
+                <label>
+                    <input type="radio" name="denvweb" value="Front-End" checked>Front-End
+                </label>
+                <label>
+                    <input type="radio" name="denvweb" value="Back-End">Back-End
+                </label>
+                <label>
+                    <input type="radio" name="denvweb" value="FullStack">Full Stack
+                </label>
             </div>
-            <div>
-                <label for="">Senioridade</label>
-                <select name="" id="" checked>
-                    <option value="" disable ></option>
+
+           <div>
+                <label for="Senioridade">Senioridade</label>
+                <select id="senioridade">
+                    <option selected disabled value="">Selecione</option>
                     <option value="Junior">Junior</option>
                     <option value="Pleno">Pleno</option>
                     <option value="Senior">Senior</option>
