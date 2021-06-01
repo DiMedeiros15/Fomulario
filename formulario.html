@@ -15,7 +15,7 @@
                 <h2 class="titulo">Bem Vindo !</h2>
                 <p class="descrição">Para continuar conectado</p>
                 <p class="descrição">Completo suas informações</p>
-                <button type="submit" class="btn btn-primario">ENTRAR</button>
+                <button id="signin" type="submit" class="btn btn-primario">ENTRAR</button>
             </div>
             <div class="coluna-2">
                 <h2 class="titulo2">Cadastro De DEVS</h2>
@@ -30,17 +30,28 @@
                         <li class="item-social-media">
                             <a href="#"><i class="fab fa-github"></i></a>
                         </li>
-                        </ul>
+                    </ul>
                 </div> <!-- Fim social media -->
 
                 <form class="form">
-                    <input type="text" placeholder="Nome">
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Senha">
+                    <label for="" class="form-label">
+                        <i class="fas fa-users icon-mod" ></i>
+                        <input type="text" placeholder="Nome">
+                    </label>
+
+                    <label for="" class="form-label">
+                        <i class="fas fa-envelope icon-mod" ></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+
+                    <label for="" class="form-label">
+                        <i class="fas fa-lock icon-mod" ></i>
+                        <input type="password" placeholder="Senha">
+                    </label>
+
                     <button type="submit" class="btn btn-secondario">Conclusão</button>
                 </form>
             </div>
-
             <!-- <div>
                 <label for="">Qual lado da aplicação voce desenvolve?</label>
                 <label>
@@ -66,39 +77,51 @@
             <div>
                 <label for="">Conte um pouco mais da sua experiência:</label>
                 <textarea name="" id="" cols="40" rows="8"></textarea>
-            </div> -->
-           
-                
-           
+            </div> -->   
         </div>
             <!-- Fim Conteudo 1 -->
             
             <!-- Conteudo 2 -->
-        <!-- <div class="conteudo-2">
+        <div class="conteudo conteudo-2">
             <div class="coluna-1">
                 <h2 class="titulo">Olá amigo</h2>
                 <p class="descrição">Para continuar conectado</p>
-                <p class="descrição">Completo suas informações</p>
-                <button type="submit" class="btn">ENTRAR</button>
+                <p class="descrição">Complete suas informações</p>
+                <button id="signup" type="submit" class="btn btn-primario">ENTRAR</button>
             </div>
             <div class="coluna-2">
-                <h2>Entre como DEVS</h2>
-                 <div class="social-media">  <!-- social media -->
-                    <!-- <ul>
-                        <a href="#"><li><i class="fab fa-facebook"></i></li></a>
-                        <a href="#"><li><i class="fab fa-instagram"></i></li></a>
-                        <a href="#"><li><i class="fab fa-github"></i></li></a>
+                <h2 class="titulo2">Cadastre-se como DEVS</h2>
+                <div class="social-media">  <!-- social media -->
+                    <ul class="lista-social">
+                        <li class="item-social-media">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="item-social-media">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="item-social-media">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </li>
                     </ul>
                 </div> <!-- Fim social media -->
-                <!-- <form class="form">
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Senha">
-                    <a href="">Esqueceu sua senha?</a> <br>
-                    <button type="submit" class="btn">Conclusão</button>
-            </form>
-        </div>
-        </div>  --> 
+
+                <form class="form">
+                    <label for="" class="form-label">
+                        <i class="fas fa-envelope icon-mod" ></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+
+                    <label for="" class="form-label">
+                        <i class="fas fa-lock icon-mod"></i>
+                        <input type="password" placeholder="Senha">
+                    </label>
+                        <a href="">Esqueceu sua senha?</a>
+                    <button type="submit" class="btn btn-secondario">Acessar</button>
+                </form>
+            </div>
+        </div>  
          <!-- Fim Conteudo 2 -->
     </main>
+    <script src="app.js"></script>
 </body>
 </html>
