@@ -58,7 +58,6 @@ h2{
     background-color: rgb(29, 0, 56);
     width: 40%;
     height: 100%;
-
     left: 0%;
 }
 
@@ -155,7 +154,8 @@ h2{
 .btn-primario{
     background-color: transparent;
     border: 2px solid #fff;
-    transition: all 1s ease;
+    transition: all 2s ease;
+    
 }
 
 .btn-primario:hover{
@@ -172,7 +172,7 @@ h2{
 .btn-secondario:hover{
     background: transparent;
     color: rgba(29, 0, 56, 0.747);
-    transition: all 3s;
+    transition: all 3s ease-in;
 }
 
 /* segundo conteudo */
@@ -192,20 +192,29 @@ h2{
     z-index: -1;
 }
 
-.sign-in-js .conteudo-1 .coluna-1,
-.sign-in-js .conteudo-1 .coluna-2{
+.sign-in-js .conteudo-1 .coluna-1{
     z-index: -1;
 }
 
-.sign-in-js .conteudo-2 .coluna-1,
+.sign-in-js .conteudo-2 .coluna-1{
+    z-index: 13;
+}
 .sign-in-js .conteudo-2 .coluna-2{
-    z-index: 12;
+    z-index: 11;
 }
 
 .sign-in-js .conteudo::before{
     left: 60%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 15px;
+    animation: slidein 2s;
+    z-index: 12;
+    background: rgb(0, 40, 56);;
+}
+
+.sign-up-js .conteudo::before{
+   animation: slideout 2s; 
+   z-index: 12;
 }
 
 .sign-up-js .conteudo-2 .coluna-1,
@@ -213,7 +222,171 @@ h2{
     z-index: -1;
 }
 
-.sign-up-js .conteudo-1 .coluna-1,
+.sign-up-js .conteudo-1 .coluna-1{
+    z-index: 13;
+}
 .sign-up-js .conteudo-1 .coluna-2{
     z-index: 11;
+}
+
+/* Deslocamento conteudo para o conteudo : before */
+.sign-in-js .conteudo-1 .coluna-2{
+  z-index: -1;
+  position: relative;
+  animation: deslocamentoEsq 2s;
+}
+
+.sign-up-js .conteudo-2 .coluna-2{
+  z-index: -1;
+  position: relative;
+  animation: deslocamentoDir 2s;
+}
+
+/* animacao de deslocamento do conteudo */
+@keyframes deslocamentoEsq{
+    from{
+        left: 0;
+        opacity: 1;
+        z-index: 12;
+    }
+
+    25% {
+        left: -80px;
+       opacity: 0;
+       z-index: 12;
+    }
+
+    50% {
+        left: -100px;
+       z-index: 12;
+    }
+
+    to {
+        left: -110px;
+        opacity: 0;
+        z-index: -1;
+
+    }
+}
+
+@keyframes deslocamentoDir {
+
+    from{
+        left: 0;
+        z-index: 12;
+    }
+
+    25% {
+        left: 80px;
+       z-index: 11;
+       opacity: 0;
+    }
+
+    50% {
+        left: 100px;
+       z-index: 12;
+    }
+
+
+    to {
+        left: 110px;
+        z-index: -1;
+        opacity: 0;
+    }
+}
+
+/* Animação css */
+@keyframes slidein {
+    from {
+        left: 0;
+        width: 40%;
+    }
+
+    25% {
+        left: 5%;
+        width: 50%;
+    }
+
+    50% {
+        left: 25%;
+        width: 60%;
+    }
+
+    75% {
+        left: 45%;
+        width: 50%;
+    }
+
+    to {
+        left: 60%;
+        width: 40%;
+    }
+
+}
+
+@keyframes slideout {
+    from {
+        left: 60%;
+        width: 40%;
+    }
+
+    25% {
+        left: 45%;
+        width: 50%;
+    }
+
+    50% {
+        left: 25%;
+        width: 60%;
+    }
+
+    75% {
+        left: 5%;
+        width: 50%;
+    }
+
+    to {
+        left: 0;
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width: 642px) {
+    .conteudo {
+        width: 90%;
+        padding: 0 10px;
+        height: 60%;
+    }
+
+    .titulo{
+        font-size: 18px;
+        text-align: center;
+        color: #ddd;
+    } 
+
+    .titulo2{
+        padding: 10px 0;
+        font-size: 25px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .descrição{
+        font-size: 12px;
+        padding: 0 8px;
+    }
+
+    .btn{
+        margin: 10px auto;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .btn-secondario{
+        margin-bottom: 1rem;
+    }
+
+    .form{
+        width: 100%;
+    }
 }
