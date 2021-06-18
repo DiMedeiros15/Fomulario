@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Animado</title>
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+</head>
+<body>
+    <main class="container">
+        <div class="conteudo conteudo-1">  <!-- Conteudo 1 -->
+            <div class="coluna-1">
+                <h2 class="titulo">Bem Vindo !</h2>
+                <p class="descrição">Para continuar conectado</p>
+                <p class="descrição">Completo suas informações</p>
+                <button id="signin" type="submit" class="btn btn-primario">ENTRAR</button>
+            </div>
+            <div class="coluna-2">
+                <h2 class="titulo2">Cadastro De DEVS</h2>
+                 <div class="social-media">  <!-- social media -->
+                    <ul class="lista-social">
+                        <li class="item-social-media">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="item-social-media">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="item-social-media">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </li>
+                    </ul>
+                </div> <!-- Fim social media -->
+
+                <form class="form">
+                    <label for="" class="form-label">
+                        <i class="fas fa-users icon-mod" ></i>
+                        <input type="text" placeholder="Nome">
+                    </label>
+
+                    <label for="" class="form-label">
+                        <i class="fas fa-envelope icon-mod" ></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+
+                    <label for="" class="form-label">
+                        <i class="fas fa-lock icon-mod" ></i>
+                        <input type="password" placeholder="Senha">
+                    </label>
+
+                    <button type="submit" class="btn btn-secondario">Conclusão</button>
+                </form>
+            </div>
+            <!-- <div>
+                <label for="">Qual lado da aplicação voce desenvolve?</label>
+                <label>
+                    <input type="radio" name="denvweb" value="Front-End" checked>Front-End
+                </label>
+                <label>
+                    <input type="radio" name="denvweb" value="Back-End">Back-End
+                </label>
+                <label>
+                    <input type="radio" name="denvweb" value="FullStack">Full Stack
+                </label>
+            </div>
+           <div>
+                <label for="Senioridade">Senioridade</label>
+                <select id="senioridade">
+                    <option selected disabled value="">Selecione</option>
+                    <option value="Junior">Junior</option>
+                    <option value="Pleno">Pleno</option>
+                    <option value="Senior">Senior</option>
+                </select>
+            </div>
+            <div>
+                <label for="">Conte um pouco mais da sua experiência:</label>
+                <textarea name="" id="" cols="40" rows="8"></textarea>
+            </div> -->   
+        </div>
+            <!-- Fim Conteudo 1 -->
+            
+            <!-- Conteudo 2 -->
+        <div class="conteudo conteudo-2">
+            <div class="coluna-1">
+                <h2 class="titulo">Olá amigo</h2>
+                <p class="descrição">Para continuar conectado</p>
+                <p class="descrição">Complete suas informações</p>
+                <button id="signup" type="submit" class="btn btn-primario">ENTRAR</button>
+            </div>
+            <div class="coluna-2">
+                <h2 class="titulo2" style="color: rgb(0, 40, 56);">Cadastre-se como DEVS</h2>
+                <div class="social-media">  <!-- social media -->
+                    <ul class="lista-social">
+                        <li class="item-social-media" style="background:rgb(0, 40, 56);">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </li>
+                        <li class="item-social-media" style="background:rgb(0, 40, 56);">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li class="item-social-media" style="background:rgb(0, 40, 56);">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </li>
+                    </ul>
+                </div> <!-- Fim social media -->
+
+                <form class="form">
+                    <label for="" class="form-label" style="border: 2px solid rgb(0, 40, 56);">
+                        <i class="fas fa-envelope icon-mod" ></i>
+                        <input type="email" placeholder="Email">
+                    </label>
+
+                    <label for="" class="form-label" style="border: 2px solid rgb(0, 40, 56);">
+                        <i class="fas fa-lock icon-mod"></i>
+                        <input type="password" placeholder="Senha">
+                    </label>
+                        <a href="#">Esqueceu sua senha?</a>
+                    <button type="submit" class="btn btn-secondario" style=" background: rgb(0, 40, 56);">Acessar</button>
+                </form>
+            </div>
+        </div>  
+         <!-- Fim Conteudo 2 -->
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
