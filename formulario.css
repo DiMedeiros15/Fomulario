@@ -121,6 +121,7 @@ h2{
     height: 45px;
     background-color: #cecece;
     width: 100%;
+    outline: none;
 }
 
 .form-label{
@@ -207,13 +208,13 @@ h2{
     left: 60%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 15px;
-    animation: slidein 2s;
+    animation: slidein 1.5s;
     z-index: 12;
     background: rgb(0, 40, 56);;
 }
 
 .sign-up-js .conteudo::before{
-   animation: slideout 2s; 
+   animation: slideout 1.5s; 
    z-index: 12;
 }
 
@@ -233,13 +234,13 @@ h2{
 .sign-in-js .conteudo-1 .coluna-2{
   z-index: -1;
   position: relative;
-  animation: deslocamentoEsq 2s;
+  animation: deslocamentoEsq 1.5s;
 }
 
 .sign-up-js .conteudo-2 .coluna-2{
   z-index: -1;
   position: relative;
-  animation: deslocamentoDir 2s;
+  animation: deslocamentoDir 1.5s;
 }
 
 /* animacao de deslocamento do conteudo */
@@ -302,21 +303,6 @@ h2{
         width: 40%;
     }
 
-    25% {
-        left: 5%;
-        width: 50%;
-    }
-
-    50% {
-        left: 25%;
-        width: 60%;
-    }
-
-    75% {
-        left: 45%;
-        width: 50%;
-    }
-
     to {
         left: 60%;
         width: 40%;
@@ -327,22 +313,8 @@ h2{
 @keyframes slideout {
     from {
         left: 60%;
+        opacity: 0;
         width: 40%;
-    }
-
-    25% {
-        left: 45%;
-        width: 50%;
-    }
-
-    50% {
-        left: 25%;
-        width: 60%;
-    }
-
-    75% {
-        left: 5%;
-        width: 50%;
     }
 
     to {
